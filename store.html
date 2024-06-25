@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Store</title>
+        <link rel="stylesheet" href="try.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="menu">
+                <div class="logo">BRIA'S<span>PICK</span>
+                    <div class="logo1">
+                        <img src="logo.jpg">
+                    </div>
+            </div>
+        </div>
+            <div class="center">
+                <div class="search">
+                    <div class="form">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search">
+                        <button>Search</button>
+                    </div>
+                </div>
+                <h2>PRODUCTS</h2>
+                <div class="list">
+                    <div class="item" data-key="1" data-stock="10">
+    <div class="img">
+        <img src="ripped.jpg" alt="">
+    </div>
+    <div class="content">
+        <div class="title">Ripped Jeans</div>
+    </div>
+    <div class="price">P180</div>
+    <div class="stock">Stock: 10</div> <!-- Stock display -->
+    <input type="number" class="count" min="1" value="1">
+    <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash"></i></button>
+    <button class="add">Add to Cart</button>
+    <button class="update-stock">Update Stock</button>
+</div>
+
+                    <div class="item" data-key="2" data-stock="10">
+                        <div class="img">
+                            <img src="high.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">High Waisted Jeans</div>
+                        </div>
+                        <div class="price">P160</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="3" data-stock="10">
+                        <div class="img">
+                            <img src="wide.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">wide Leg Jeans</div>
+                        </div>
+                        <div class="price">P180</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="4" data-stock="10">
+                        <div class="img">
+                            <img src="flare.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Flare Jeans</div>
+                        </div>
+                        <div class="price">P180</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="5" data-stock="10">
+                        <div class="img">
+                            <img src="over.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Oversized Shirts</div>
+                        </div>
+                        <div class="price">P100</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(5)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="6" data-stock="10">
+                        <div class="img">
+                            <img src="polo.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Polo Shirts</div>
+                        </div>
+                        <div class="price">P100</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(6)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="7" data-stock="10">
+                        <div class="img">
+                            <img src="v.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">V-neck Shirts</div>
+                        </div>
+                        <div class="price">P100</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(7)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="8" data-stock="10">
+                        <div class="img">
+                            <img src="round.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Round Neck Shirts</div>
+                        </div>
+                        <div class="price">P100</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(8)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="9" data-stock="10">
+                        <div class="img">
+                            <img src="chanel.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Chanel</div>
+                        </div>
+                        <div class="price">P1000</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(9)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="10" data-stock="10">
+                        <div class="img">
+                            <img src="armani.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Armani</div>
+                        </div>
+                        <div class="price">P1100</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(10)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="11" data-stock="10">
+                        <div class="img">
+                            <img src="Jom.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Jo Malone</div>
+                        </div>
+                        <div class="price">P1200</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(11)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="12" data-stock="10">
+                        <div class="img">
+                            <img src="afi.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Aficionado</div>
+                        </div>
+                        <div class="price">P150</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(12)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="13" data-stock="10">
+                        <div class="img">
+                            <img src="spag.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Spaghetti Strap</div>
+                        </div>
+                        <div class="price">P100</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(13)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="14" data-stock="10">
+                        <div class="img">
+                            <img src="racer.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Racerback</div>
+                        </div>
+                        <div class="price">P50</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(14)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="15" data-stock="10">
+                        <div class="img">
+                            <img src="muscle.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Muscle Tee</div>
+                        </div>
+                        <div class="price">P100</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(15)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="16" data-stock="10">
+                        <div class="img">
+                            <img src="rib.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">ribbed Knit Sando</div>
+                        </div>
+                        <div class="price">P100</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(16)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="17" data-stock="10">
+                        <div class="img">
+                            <img src="barbie.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Barbie</div>
+                        </div>
+                        <div class="price">P150</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(17)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="18" data-stock="10">
+                        <div class="img">
+                            <img src="dollhouse.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Dollhouse</div>
+                        </div>
+                        <div class="price">P200</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(18)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="19" data-stock="10">
+                        <div class="img">
+                            <img src="car.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Car</div>
+                        </div>
+                        <div class="price">P150</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(19)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                    <div class="item" data-key="20" data-stock="10">
+                        <div class="img">
+                            <img src="lego.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Lego</div>
+                        </div>
+                        <div class="price">P300</div>
+                        <div class="stock">Stock: 10</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(20)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                        <button class="update-stock">Update Stock</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart">
+                <div class="name">CART</div>
+                <div class="receipt" id="receipt">
+                    <h2>Receipt</h2>
+                    <div class="receipt-items" id="receiptItems"></div>
+                    <div class="receipt-total" id="receiptTotal"></div>
+                </div>
+                <div>
+                    <label for="discountType">Select Discount Type:</label>
+                    <select id="discountType">
+                        <option value="none">None</option>
+                        <option value="senior">Senior - 20%</option>
+                        <option value="pwd">PWD - 30%</option>
+                        <option value="student">Student - 10%</option>
+                    </select>
+                </div>
+                <div class="listCart"></div>
+                <button id="checkoutButton">Checkout</button>
+            </div>
+        </div>
+        <button id="scrollTopButton" onclick="scrollToTop()">Scroll to Top</button>
+        <script src="store.js"></script>
+    </body>
+    </html>

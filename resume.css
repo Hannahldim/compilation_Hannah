@@ -1,0 +1,49 @@
+.container{
+	max-width:1300px;
+	margin:0px 25px;
+	background-color:#a58888;
+    padding: 15px;
+    height: 400px;
+    overflow: auto;
+}
+.header{
+    padding: 5px;
+    margin: 00px 25px;
+    text-align: left;
+    background: rgb(124, 92, 92);
+}
+h3{
+	margin-left: 50px;
+	margin-right: 30px;
+    color: antiquewhite;
+}
+h2{
+    margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+    color: antiquewhite;
+}
+.gallery1{
+	margin:5px;
+	float:right;
+	width:150px;
+	margin-left:300px;
+}
+.gallery1 img{
+	width:150px;
+	height:150px;
+}
+.defaultdisplay{
+	display: none;
+}
+.button1{
+	font-size: 17px;
+	border-radius: 12px;
+	background-color: white;
+	color:black
+
+}
+.button1:hover{
+	background-color: #a58888;
+	color:black;
+}

@@ -1,0 +1,123 @@
+<!Doctype HTML>
+<html>
+<head> 
+<Title> Resume </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+	<div class = "header">
+		<div class = "gall1">
+	<img src = "hannah.jpg"></div>
+<h1> Hannah Lharainne F. Dimaranan</h1>
+<h2> 
+<pre>Purok 4 Kaysuyo, Alfonso, Cavite 
+Contact No: 09166833163
+Email Address:  hannahlharainnedimaranan@gmail.com
+</pre>
+</h2>
+</div>
+</header>
+<div class = "obj">
+<h1>
+<b >Career Objectives:</b></h1>
+<h3>
+<pre> To obtain a position and work in an environment that effectively utilizes my skills and provide opportunity for self-development. To enhance my skilss and knowledge in a 
+field that fits my qualifications.</pre>
+<hr>
+<h1>
+<b>Personal Background:</b>
+<h3>
+<pre>Date Of Birth: May 23,2003
+Civil Status:  Single
+Gender:        Female
+Citizenship:   Filipino</pre>
+<hr>
+<h1>
+<b>Educational Attainment:</b>
+<h3>
+<pre>College: 	    City College of Tagaytay
+		    Bachelor of Science in Information Technology
+		    Kaybagal South, Tagaytay City
+		    2021-present
+			
+Senior High School: Olivarez College Tagaytay
+                    Tvl - Information and Communications Technology
+		    San Jose, Tagaytay City
+ 		    2019-2021
+			
+High School: 	    Kaytitingga National High School
+	     	    Kaytitingga 1, Alfonso, Cavite
+		    2015-2019
+			
+Elementary: 	    St.Joseph Parochial School of Cavite
+                    Kaytitingga 1, Alfonso, Cavite
+                    2014-2015
+</pre>
+<hr>
+<h1>
+<b>Skills And Interest:</b>
+<h3>
+<pre>
+<li>Computer literate (Programming, Ms Application)</li>
+<li>Good in communication skills</li>
+<li>Quick learner</li>
+<li>Can work under pressure</li>
+<li>Ability to carry out instruction</li></pre>
+<hr>
+<h1>
+<b>Work Experience:</b>
+<h3>
+<pre>Service Crew
+Golden Arches Development Corporation (McDonalds)
+May 2023-present
+
+<li>Efficiently take customer orders, ensure accuracy, and process payments using a POS system</li>
+<li>Collaborate with kitchen staff to ensure timely and accurate food preparation, minimizing customer wait times and enhancing the overall dining experience</li>
+<li>Received multiple customer commendations for providing exceptional service, demonstrating strong inteerpersonal skills and maintaining a positive attitude
+in high-pressure situations</li></pre>
+<h1>
+<hr>
+<b>Awards Recieved:</b>
+<h3>
+<pre>
+<li>Bronze Awardee(2015)</li>
+<li>Dr. Rosario Olivarez Excellence Awardee(2020)</li>
+<li>Dr. Pablo Olivarez Excellence Awardee(2021)</li>
+<li>Dean's Lister (2022)</li>
+<li>Dean's Lister (2023)</li></pre>
+</div>
+</body>
+</html>
+
+here's my css code:
+
+.obj {
+    padding: 5px;
+    margin-left: 5px;
+    margin-left: 5px;
+    text-align: left;
+    background-color: rgb(226, 232, 238);
+}
+h1 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header{
+    padding: 5px;
+    margin-left: 5px;
+    margin-left: 5px;
+    text-align: left;
+    background-color: rgb(171, 182, 190);
+}
+.gall1{
+    margin: 5px;
+    float: right;
+    width: 150px;
+    margin-left: 50px;
+    margin-right: 5px;
+}
+.gall1 img {
+    width: 150px;
+    height: 150px;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Store</title>
+        <link rel="stylesheet" href="restau.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        </head>
+    <body>
+        <div class="container">
+            <div class="menu">
+                <div class="logo"><span>RESTAU</span>
+            </div>
+        </div>
+            <div class="center">
+                <div class="search">
+                    <div class="form">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search">
+                        <button>Search</button>
+                    </div>
+                </div>
+                <h2>MENU</h2>
+                <div class="list">
+                    <div class="item" data-key="1" data-stock="10">
+    <div class="img">
+        <img src="sinigang.jpg" alt="">
+    </div>
+    <div class="content">
+        <div class="title">SINIGANG</div>
+    </div>
+    <div class="price">P80</div>
+    <input type="number" class="count" min="1" value="1">
+    <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash"></i></button>
+    <button class="add">Add to Cart</button>
+</div>
+
+                    <div class="item" data-key="2" data-stock="10">
+                        <div class="img">
+                            <img src="adobo.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">ADOBO</div>
+                        </div>
+                        <div class="price">P60</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="3" data-stock="10">
+                        <div class="img">
+                            <img src="kare-kare.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">KARE-KARE</div>
+                        </div>
+                        <div class="price">P70</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="4" data-stock="10">
+                        <div class="img">
+                            <img src="menudo.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">MENUDO</div>
+                        </div>
+                        <div class="price">P80</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="5" data-stock="10">
+                        <div class="img">
+                            <img src="adobo.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">BULALO</div>
+                        </div>
+                        <div class="price">P100</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(5)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="6" data-stock="10">
+                        <div class="img">
+                            <img src="adobo.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">LUMPIANG GULAY</div>
+                        </div>
+                        <div class="price">P50</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(6)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="7" data-stock="10">
+                        <div class="img">
+                            <img src="lumpiang gulay.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">LUMPIANG GULAY</div>
+                        </div>
+                        <div class="price">P50</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(7)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="8" data-stock="10">
+                        <div class="img">
+                            <img src="adobong sitaw.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">ADOBONG SITAW</div>
+                        </div>
+                        <div class="price">P70</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(8)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="9" data-stock="10">
+                        <div class="img">
+                            <img src="chopseuy.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">CHOPSEUY</div>
+                        </div>
+                        <div class="price">P70</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(9)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="10" data-stock="10">
+                        <div class="img">
+                            <img src="cof.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">BREWED COFFEE</div>
+                        </div>
+                        <div class="price">P50</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(10)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="11" data-stock="10">
+                        <div class="img">
+                            <img src="oj.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">ORANGE JUICE</div>
+                        </div>
+                        <div class="price">P40</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(11)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="12" data-stock="10">
+                        <div class="img">
+                            <img src="pj.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">PINEAPPLE JUICE</div>
+                        </div>
+                        <div class="price">P50</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(12)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="13" data-stock="10">
+                        <div class="img">
+                            <img src="leche flan.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">LECHE FLAN</div>
+                        </div>
+                        <div class="price">P50</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(13)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="14" data-stock="10">
+                        <div class="img">
+                            <img src="chocolate cake.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">CHOCOLATE CAKE</div>
+                        </div>
+                        <div class="price">P70</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(14)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="15" data-stock="10">
+                        <div class="img">
+                            <img src="blueberry cheesecake.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">BLUEBERRY CHEESECAKE</div>
+                        </div>
+                        <div class="price">P60</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(15)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="16" data-stock="10">
+                        <div class="img">
+                            <img src="plain rice.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">PLAIN RICE</div>
+                        </div>
+                        <div class="price">P15</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(16)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="17" data-stock="10">
+                        <div class="img">
+                            <img src="java rice.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">JAVA RICE</div>
+                        </div>
+                        <div class="price">P18</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(17)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    <div class="item" data-key="18" data-stock="10">
+                        <div class="img">
+                            <img src="fries.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">FRIES</div>
+                        </div>
+                        <div class="price">P30</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="remove" onclick="Remove(18)"><i class="fa-solid fa-trash"></i></button>
+                        <button class="add">Add to Cart</button>
+                    </div>
+                    </div>
+            </div>
+            <div class="cart">
+                <div class="name">CART</div>
+                <div class="receipt" id="receipt">
+                    <h2>Receipt</h2>
+                    <div class="receipt-items" id="receiptItems"></div>
+                    <div class="receipt-total" id="receiptTotal"></div>
+                </div>
+                <div class="listCart"></div>
+                <button id="checkoutButton">Checkout</button>
+            </div>
+        </div>
+        <button id="scrollTopButton" onclick="scrollToTop()">Scroll to Top</button>
+        <script src="restau.js"></script>
+    </body>
+    </html>

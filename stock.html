@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Stock - Sari-Sari Store</title>
+    <link rel="stylesheet" href="sari.css">
+    <script>
+        var stock = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]; // Initial stock levels
+        
+        function updateStock() {
+            var inputs = document.querySelectorAll('input[type="number"]');
+            for (var i = 0; i < inputs.length; i++) {
+                stock[i] += parseInt(inputs[i].value); // Add to stock instead of replacing
+            }
+            localStorage.setItem('stockLevels', JSON.stringify(stock)); // Update stock levels in local storage
+            alert('Stock updated successfully!');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Update Stock Levels</h1>
+        <form id="stockForm">
+            <div class="product">
+                <label>Ripped Jeans</label>
+                <input type="number" id="stock1" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>High Waisted Jeans</label>
+                <input type="number" id="stock2" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Wide Leg Pants</label>
+                <input type="number" id="stock3" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Flare Pants</label>
+                <input type="number" id="stock4" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Over Sized Shirts</label>
+                <input type="number" id="stock5" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Polo Shirts</label>
+                <input type="number" id="stock6" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>V-Neck Shirts</label>
+                <input type="number" id="stock7" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Round Neck Shirts</label>
+                <input type="number" id="stock8" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Chanel</label>
+                <input type="number" id="stock9" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Armani</label>
+                <input type="number" id="stock10" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Jo Malone</label>
+                <input type="number" id="stock11" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Aficionado</label>
+                <input type="number" id="stock12" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Spaghetti Strap</label>
+                <input type="number" id="stock13" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Racerback</label>
+                <input type="number" id="stock14" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Muscle Tee</label>
+                <input type="number" id="stock15" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Rib Knit Sando</label>
+                <input type="number" id="stock16" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Barbie</label>
+                <input type="number" id="stock17" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Dollhouse</label>
+                <input type="number" id="stock18" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Car</label>
+                <input type="number" id="stock19" value="0" min="0">
+            </div>
+            <div class="product">
+                <label>Lego</label>
+                <input type="number" id="stock20" value="0" min="0">
+            </div>
+
+            <button type="button" onclick="updateStock()">Update Stock</button>
+            <a href="sari.html" class="back-button">Back</a>
+        </form>
+    </div>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var storedStock = localStorage.getItem('stockLevels');
+    if (storedStock) {
+        stock = JSON.parse(storedStock);
+    }
+});
+</script>
+</html>
